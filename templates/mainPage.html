@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+{%endblock%}
+
+{% block body %}
+	
+	<link rel="stylesheet" type="text/css" href="/static/style2.css?{{ range(1, 1000) | random }}">
+	
+	<div class="mainblock">
+	
+		<h1>CodeLock</h1>
+		
+		<div class="bl">
+			<div class="image"><p style="text-align: center;"><img src="static/lock.jpg"></p>
+				
+			</div>
+				<div class="text"><p class="textForm">CodeLock is an electronic lock project that can be controlled remotely via WiFi.</br>
+					Usage guide:
+					<p class="guide">1. You can open the lock remotely</br>
+									 2. You will receive alerts when the password is entered incorrectly</br>
+									 3. You can change the password remotely</br>
+					</p>
+			</div>
+		</div>
+	</div>
+	
+{%endblock%}

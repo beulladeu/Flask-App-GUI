@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+{%endblock%}
+
+{% block body %}
+	<link rel="stylesheet" type="text/css" href="/static/style1.css?{{ range(1, 1000) | random }}">
+	
+	<div class="mainblock">
+		<h1>Project's developers</h1>
+		
+		<div class="people">
+			<div class="man"><p class="status">Programmer</p>
+				<p class="info"><br/>Vladislava Verkhonina<br/>vverkhonina@mail.ru<br/>group 5812
+				</p>
+			</div>
+				<div class="man"><p class="status">3D-modeller</p>
+					<p class="info"><br/>Victoriia Yudina<br/>udinaviktoriia@gmail.com<br/>group 5812
+					</p>
+			</div>
+			<div class="man"><p class="status">Electronic engineer</p>
+				<p class="info"><br/>Bogdan Rud'ko<br/>Rydkoc@icloud.com<br/>group 5812
+				</p>
+			</div>
+		</div>
+	</div>
+	
+{%endblock%}

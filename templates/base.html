@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+    	<title>CodeLock</title>
+    	
+		<link rel="stylesheet" type="text/css" href="/static/style.css?{{ range(1, 1000) | random }}">
+    
+    	{%block head%}
+    	{%endblock%}
+    </head>
+    
+	<body>
+    	<header>
+    		<div class="menu">
+    			<div class="sub-menu"><a class="diz" href="/">Main page</a></div>
+				<div class="sub-menu"><a class="diz" href="/page1">About us</a></div>
+				<div class="sub-menu"><a class="diz" href="/page2">Profile</a></div>
+				<div class="sub-menu"><a class="diz" href="/page3">Status</a></div>
+    		</div>
+    	</header>
+    	{%block body%}
+    	{%endblock%}
+    </body>
+</html>

@@ -1,0 +1,67 @@
+html body{
+	margin: 10;
+	padding: 0;
+}
+
+.bl
+{
+	height: 400px;
+	text-align: center;
+	background-color:#151719;
+	-moz-box-shadow: 0px 0px 20px #000000;
+    -webkit-box-shadow: 0px 0px 20px #000000;
+	left: 50%;
+	margin-left: -700px;
+	position: absolute;
+	width: 1400px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	
+}
+
+.text
+{
+	display: inline-block;
+	width: 55%;
+	text-align: center;
+}
+
+.image
+{
+	display: inline-block;
+	width: 30%;
+	margin-left: -100px;
+}
+
+.textForm{
+	color: #CEF0D7;
+	font-family: ‘Rouge Script’,cursive;
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 40px;
+	text-align: center;
+	text-shadow: 1px 1px 2px #082b34;
+}
+
+.guide{
+	color: #CEF0D7;
+	font-family: ‘Rouge Script’,cursive;
+	font-size: 33px;
+	font-weight: normal;
+	line-height: 40px;
+	text-shadow: 1px 1px 2px #082b34;
+	text-align: left;
+}
+
+.text-status{
+	width: 350px;
+	color: #CEF0D7;
+	font-family: ‘Rouge Script’,cursive;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 50px;
+	text-align: center;
+	text-shadow: 2px 2px 5px #082b34;
+}
+
+

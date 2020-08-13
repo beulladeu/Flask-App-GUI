@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block head %}
+{%endblock%}
+
+{% block body %}
+	<link rel="stylesheet" type="text/css" href="/static/style3.css?{{ range(1, 1000) | random }}">
+	
+	<div class="mainblock">
+	
+		<h1>App</h1>
+		
+		<div class="bl">
+			<form class="error-message" method="get">{{ errorMessage }}</form>
+			<form class="bl1" method="post">
+				Enter password<br>to open the lock
+				<p><b>Password</b><br>
+					<input type="password" size="40" name="current_password" placeholder="Password"/>
+				</p>
+				<input type="submit" value="Open the lock"/>
+			</form>
+			
+			<form class="bl2" method="post">
+				<br>Change Password
+				<p><b>Enter old password</b><br>
+					<input type="password" size="40" name="current_password" placeholder="Password"/>
+				</p>
+				<p><b>Enter new password</b><br>
+					<input type="password" size="40" name="new_password" placeholder="Password"/>
+				</p>
+				<input type="submit" value="Change"/>
+			</form>
+			
+		</div>
+		<div class="log-out">
+			<a href="/logout" style="color: #CEF0D4;">Log out</a>
+		</div>
+		
+	</div>
+{%endblock%}
+
